@@ -1,21 +1,21 @@
 {
   "name": "wowup",
   "productName": "WowUp",
-  "version": "2.20.0",
+  "version": "2.20.0-mythos",
   "private": true,
   "description": "World of Warcraft addon updater",
   "keywords": [
     "wow",
     "world of warcraft"
   ],
-  "homepage": "https://wowup.io",
+  "homepage": "https://mythos.zip",
   "repository": {
     "type": "git",
     "url": "https://github.com/WowUp/WowUp.git"
   },
   "author": {
-    "name": "WowUp LLC",
-    "email": "zakrn@wowup.io"
+    "name": "WowUp LLC & MythoS",
+    "email": "root@mythos.zip"
   },
   "main": "app/main.js",
   "scripts": {

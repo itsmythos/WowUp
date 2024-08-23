@@ -134,8 +134,9 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
     public wowUpService: WowUpService,
   ) {
     setTimeout(() => {
-      if (document.getElementById("wow-background") !== null) {
-        document.getElementById("wow-background").style.opacity = "0.5";
+      const elem = document.getElementById("wow-background")
+      if (elem !== null) {
+        elem.style.opacity = "0.5";
       }
     }, 1000);
 
@@ -148,7 +149,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 
     this.electronService.appUpdate$.subscribe((evt) => {
       if (evt.state === AppUpdateState.Error) {
-        if (evt.error.indexOf("dev-app-update.yml") === -1) {
+        if (evt.error?.indexOf("dev-app-update.yml") === -1) {
           this._snackbarService.showErrorSnackbar("APP.WOWUP_UPDATE.UPDATE_ERROR");
         }
       } else if (evt.state === AppUpdateState.Downloaded) {
@@ -284,12 +285,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 
   private async showRequiredDialogs(): Promise<void> {
     try {
-      const shouldShowConsent = await this.shouldShowConsentDialog();
-      if (shouldShowConsent) {
-        this.openConsentDialog();
-        return;
-      }
-
+      this._analyticsService.setTelemetryEnabled(false).catch(console.error);
       this.showPreLoad$.next(false);
     } catch (e) {
       console.error(e);

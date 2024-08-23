@@ -1,6 +1,6 @@
 {
   "productName": "WowUp",
-  "appId": "io.wowup.jliddev",
+  "appId": "io.wowup.mythos",
   "directories": {
     "output": "release/"
   },
@@ -12,8 +12,8 @@
   "win": {
     "icon": "electron-build/icon.ico",
     "target": ["nsis", "portable"],
-    "forceCodeSigning": true,
-    "publisherName": "WowUp LLC"
+    "forceCodeSigning": false,
+    "publisherName": "WowUp LLC & MythoS"
   },
   "nsis": {
     "deleteAppDataOnUninstall": true

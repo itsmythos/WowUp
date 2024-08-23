@@ -180,7 +180,7 @@ export class WagoAddonProvider extends AddonProvider {
   public readonly forceIgnore = false;
   public enabled = true;
   public authRequired = true;
-  public adRequired = true;
+  public adRequired = false;
   public allowEdit = true;
   public allowReinstall = true;
   public allowChannelChange = true;
