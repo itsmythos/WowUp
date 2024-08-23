@@ -16,7 +16,7 @@ export const AppConfig = {
     applicationInsightsKey: "4a53e8d9-796c-4f80-b1a6-9a058374dd6d",
   },
   wago: {
-    enabled: false,
+    enabled: true,
     termsUrl: "",
     dataConsentUrl: "",
   },
