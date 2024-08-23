@@ -11,12 +11,12 @@ export const AppConfig = {
     applicationInsightsKey: "4a53e8d9-796c-4f80-b1a6-9a058374dd6d",
   },
   wago: {
-    enabled: false,
+    enabled: true,
     termsUrl: "https://addons.wago.io/agreements/terms-of-service",
     dataConsentUrl: "https://addons.wago.io/agreements/wowup-data-consent",
   },
   curseforge: {
-    enabled: false,
+    enabled: true,
     httpTimeoutMs: 60000,
     apiKey: "{{CURSEFORGE_API_KEY}}",
   },
