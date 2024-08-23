@@ -33,7 +33,7 @@ export class ConsentDialogComponent implements AfterViewChecked, OnInit {
     private _electronService: ElectronService,
   ) {
     this.consentOptions = new UntypedFormGroup({
-      telemetry: new UntypedFormControl(true),
+      telemetry: new UntypedFormControl(false),
       wagoProvider: new UntypedFormControl(true),
     });
   }
