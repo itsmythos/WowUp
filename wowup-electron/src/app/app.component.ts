@@ -285,7 +285,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 
   private async showRequiredDialogs(): Promise<void> {
     try {
-      this._analyticsService.setTelemetryEnabled(false).catch(console.error);
+      await this._analyticsService.setTelemetryEnabled(false)
       this.showPreLoad$.next(false);
     } catch (e) {
       console.error(e);
