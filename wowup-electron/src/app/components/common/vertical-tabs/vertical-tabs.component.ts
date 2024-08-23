@@ -50,13 +50,8 @@ export class VerticalTabsComponent implements OnInit, OnDestroy {
   public adPageParams$ = new BehaviorSubject<AdPageOptions[]>([]);
   public isCollapsedSrc = new BehaviorSubject(false);
 
-  public isCollapsed$ = combineLatest([this.isCollapsedSrc, this.sessionService.adSpace$]).pipe(
-    map(([isCollapsed, adSpace]) => {
-      if (adSpace) {
-        return false;
-      }
-      return isCollapsed;
-    }),
+  public isCollapsed$ = combineLatest([this.isCollapsedSrc]).pipe(
+    map(([isCollapsed]) => isCollapsed),
   );
 
   public isAccountSelected$ = this.sessionService.selectedHomeTab$.pipe(map((result) => result === TAB_INDEX_ABOUT));

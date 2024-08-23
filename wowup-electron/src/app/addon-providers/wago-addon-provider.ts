@@ -179,8 +179,8 @@ export class WagoAddonProvider extends AddonProvider {
   public readonly name = ADDON_PROVIDER_WAGO;
   public readonly forceIgnore = false;
   public enabled = true;
-  public authRequired = true;
-  public adRequired = false;
+  public authRequired = false;
+  public adRequired = true;
   public allowEdit = true;
   public allowReinstall = true;
   public allowChannelChange = true;
