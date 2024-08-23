@@ -23,6 +23,6 @@ let packageJson = JSON.parse(packageData);
 packageJson.name = process.env.BUILD_FLAVOR === "ow" ? "wowup-cf" : "wowup";
 packageJson.productName = process.env.BUILD_FLAVOR === "ow" ? "WowUpCf" : "WowUp";
 packageJson.repository.url =
-  process.env.BUILD_FLAVOR === "ow" ? "https://github.com/WowUp/WowUp.CF.git" : "https://github.com/WowUp/WowUp.git";
+  process.env.BUILD_FLAVOR === "ow" ? "https://github.com/itsmythos/WowUp.CF.git" : "https://github.com/itsmythos/WowUp.git";
 
 fs.writeFileSync(packagePath, JSON.stringify(packageJson, null, 2));

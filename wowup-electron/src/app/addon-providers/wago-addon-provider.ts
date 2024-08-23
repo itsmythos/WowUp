@@ -223,7 +223,6 @@ export class WagoAddonProvider extends AddonProvider {
         first(),
         tap((accessKey) => {
           const validToken = this.isValidToken(accessKey);
-          this.adRequired = !validToken;
           if (validToken) {
             this._wagoSecret = accessKey;
             console.debug("[wago] secret key set");
