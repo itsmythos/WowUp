@@ -16,7 +16,7 @@ export const AppConfig = {
     dataConsentUrl: "https://addons.wago.io/agreements/wowup-data-consent",
   },
   curseforge: {
-    enabled: false,
+    enabled: true,
     httpTimeoutMs: 60000,
     apiKey: "",
   },
