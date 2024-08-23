@@ -40,6 +40,13 @@ jobs:
 
       - name: Install Angular CLI
         run: npm install -g @angular/cli
+
+      - name: Inject Token
+        env:
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+        run: |
+          cd ./wowup-electron
+          node ./inject-token.js
         
       - name: Build Linux App
         if: matrix.os == 'ubuntu-latest'
