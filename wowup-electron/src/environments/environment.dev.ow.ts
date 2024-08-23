@@ -9,7 +9,7 @@ export const AppConfig = {
   wowUpWebsiteUrl: "https://dev.wowup.io",
   wowUpApiUrl: "https://api.dev.wowup.io",
   wowUpHubUrl: "https://hub.dev.wowup.io",
-  wowupRepositoryUrl: "https://github.com/itsmythos/WowUp,
+  wowupRepositoryUrl: "https://github.com/itsmythos/WowUp",
   warcraftTavernNewsFeedUrl:
     "https://www.warcrafttavern.com/?call_custom_simple_rss=1&csrp_post_type=wow-classic-news,tbc-classic-news,retail-news&csrp_thumbnail_size=large",
   azure: {
